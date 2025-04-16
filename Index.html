@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Memory Card Game</title>
+    <link rel="stylesheet" href="Style.css">
+
+</style>
+</head>
+<body>
+    <h1>Memory Card Game</h1>
+    
+    <div class="game-info">
+        <p>Find all matching pairs of cards to win!</p>
+    </div>
+    
+    <div class="game-stats">
+        <div class="stat">
+            <h3>Moves</h3>
+            <p id="moves-count">0</p>
+        </div>
+        <div class="stat">
+            <h3>Pairs</h3>
+            <p id="pairs-count">0 / 8</p> <!--Counting number of pairs found-->
+        </div>
+    </div>
+    
+    <div class="game-board" id="game-board">
+        <!-- Generate cards and place them in the Board using JS -->
+    </div>
+    
+    <div class="controls">
+        <button id="restart-btn">Restart Game</button>
+    </div>
+    
+    <div class="win-message" id="win-message">
+        <h2>!!!!!YOU WON!!!!!!</h2>
+        <p>All pairs have been matched in <span id="final-moves">0</span> moves!</p> <!--The number of moves taken to complete the game-->
+        <button id="play-again-btn">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    </body>
+    </html>
